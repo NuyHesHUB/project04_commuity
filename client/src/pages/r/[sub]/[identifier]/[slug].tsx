@@ -98,14 +98,14 @@ const PostPage = () => {
                                             Posted by                     <i className="fas fa-abacus"></i>
 
                                             <Link href={`/u/${post.username}`}>
-                                                <a className="mx-1 hover:underline">
+                                                <span className="mx-1 hover:underline">
                                                     /u/{post.username}
-                                                </a>
+                                                </span>
                                             </Link>
                                             <Link href={post.url}>
-                                                <a className="mx-1 hover:underline">
+                                                <span className="mx-1 hover:underline">
                                                     {dayjs(post.createdAt).format("YYYY-MM-DD HH:mm")}
-                                                </a>
+                                                </span>
                                             </Link>
                                         </p>
                                     </div>
@@ -128,9 +128,9 @@ const PostPage = () => {
                                     (<div>
                                         <p className="mb-1 text-xs">
                                             <Link href={`/u/${user?.username}`}>
-                                                <a className="font-semibold text-blue-500">
+                                                <span className="font-semibold text-blue-500">
                                                     {user?.username}
-                                                </a>
+                                                </span>
                                             </Link>
                                             {" "}으로 댓글 작성
                                         </p>
@@ -158,9 +158,9 @@ const PostPage = () => {
                                         </p>
                                         <div>
                                             <Link href={`/login`}>
-                                                <a className="px-3 py-1 text-white bg-gray-400 rounded">
+                                                <span className="px-3 py-1 text-white bg-gray-400 rounded">
                                                     로그인
-                                                </a>
+                                                </span>
                                             </Link>
                                         </div>
                                     </div>)
@@ -197,9 +197,9 @@ const PostPage = () => {
                                     <div className="py-2 pr-2">
                                         <p className="mb-1 text-xs leading-none">
                                             <Link href={`/u/${comment.username}`}>
-                                                <a className="mr-1 font-bold hover:underline">
+                                                <span className="mr-1 font-bold hover:underline">
                                                     {comment.username}
-                                                </a>
+                                                </span>
                                             </Link>
                                             <span className="text-gray-600">
                                                 {`

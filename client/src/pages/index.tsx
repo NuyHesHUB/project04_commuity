@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                 className="flex items-center px-4 py-2 text-xs border-b"
               >
                 <Link href={`/r/${sub.name}`}>
-                  <a>
+                  <span>
                     <Image
                       src={sub.imageUrl}
                       className="rounded-full cursor-pointer"
@@ -101,12 +101,12 @@ const Home: NextPage = () => {
                       width={24}
                       height={24}
                     />
-                  </a>
+                  </span>
                 </Link>
                 <Link href={`/r/${sub.name}`}>
-                  <a className='ml-2 font-bold hover:cursor-pointer'>
+                  <span className='ml-2 font-bold hover:cursor-pointer'>
                     /r/{sub.name}
-                  </a>
+                  </span>
                 </Link>
                 <p className='ml-auto font-md'>{sub.postCount}</p>
               </div>
@@ -117,9 +117,9 @@ const Home: NextPage = () => {
           {authenticated &&
             <div className='w-full py-6 text-center'>
               <Link href="/subs/create">
-                <a className='w-full p-2 text-center text-white bg-gray-400 rounded'>
+                <span className='w-full p-2 text-center text-white bg-gray-400 rounded'>
                   커뮤니티 만들기
-                </a>
+                </span>
               </Link>
             </div>
           }

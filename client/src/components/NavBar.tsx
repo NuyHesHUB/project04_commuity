@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
         <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-13">
             <span className="text-2xl font-semibold text-gray-400">
                 <Link href="/">
-                    <a>
+                    <span>
                     <Image
                         src="/reddit-name-logo.png"
                         alt="logo"
@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
                         height={45}
                     >
                     </Image>
-                    </a>
+                    </span>
                 </Link>
             </span>
             <div className="max-w-full px-4">
@@ -56,14 +56,14 @@ const NavBar: React.FC = () => {
                         </button>
                     ) : (<>
                         <Link href="/login">
-                            <a className="w-20 px-2 pt-1 mr-2 text-sm text-center text-blue-500 border border-blue-500 rounded h-7">
+                            <span className="w-20 px-2 pt-1 mr-2 text-sm text-center text-blue-500 border border-blue-500 rounded h-7">
                                 로그인
-                            </a>
+                            </span>
                         </Link>
                         <Link href="/register">
-                            <a className="w-20 px-2 pt-1 text-sm text-center text-white bg-gray-400 rounded h-7">
+                            <span className="w-20 px-2 pt-1 text-sm text-center text-white bg-gray-400 rounded h-7">
                                 회원가입
-                            </a>
+                            </span>
                         </Link>
                     </>)
                 )}
