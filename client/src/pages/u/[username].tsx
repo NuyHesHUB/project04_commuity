@@ -1,11 +1,23 @@
-import dayjs from 'dayjs';
+import React from 'react'
+
+/* next */
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
-import React from 'react'
-import useSWR from 'swr'
+
+/* Component */
 import PostCard from '../../components/PostCard';
+
+/* Types */
 import { Comment, Post } from '../../types';
+
+/* Library */
+import dayjs from 'dayjs';
+import useSWR from 'swr'
+
+/* React-icons */
+import { FaCommentAlt } from 'react-icons/fa';
+
 
 const UserPage = () => {
     const router = useRouter();
@@ -28,31 +40,31 @@ const UserPage = () => {
                                 key={comment.identifier}
                                 className="flex my-4 bg-white rounded"
                             >
-                                <div className='flex-shrink-0 w-10 py-10 text-center bg-white border-r rounded-l'>
-                                    <i className="text-gray-500 fas fa-comment-alt fa-xs"></i>
+                                <div className='flex-shrink-0 w-10 py-10 text-center bg-blue-400 border-r rounded-l'>
+                                    <FaCommentAlt className='text-white w-10 fa-xs'></FaCommentAlt>
                                 </div>
-                                <div className='w-full p-2'>
+                                <div className='w-full p-2 border-b'>
                                     <p className='mb-2 text-xs text-gray-500'>
                                         <Link href={`/u/${comment.username}`}>
-                                            <span className='cursor-pointer hover:underline'>
-                                                {comment.username}
+                                            <span className='cursor-pointer hover:underlink'>
+                                                {comment.username} 님의
                                             </span>
                                         </Link>{" "}
                                         <span>commented on</span>{" "}
-                                        <Link href={`/u/${comment.post?.url}`}>
-                                            <span className='font-semibold cursor-pointer hover:underline'>
+                                        <Link href={`${comment.post?.url}`}>
+                                            <span className='cursor-pointer font-semibold hover:underline'>
                                                 {comment.post?.title}
                                             </span>
                                         </Link>{" "}
                                         <span>•</span>{" "}
-                                        <Link href={`/u/${comment.post?.subName}`}>
+                                        <Link href={`/r/${comment.post?.subName}`}>
                                             <span className='text-black cursor-pointer hover:underline'>
-                                                /r/{comment.post?.subName}
+                                                {comment.post?.subName}
                                             </span>
                                         </Link>
                                     </p>
-                                    <hr />
-                                    <p className="p-1">{comment.body}</p>
+                                    <hr/>
+                                    <p className='p-1'>{comment.body}</p>
                                 </div>
                             </div>
                         )

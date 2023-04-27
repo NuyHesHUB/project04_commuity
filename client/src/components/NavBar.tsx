@@ -1,8 +1,15 @@
 import axios from "axios";
+
+/* next */
 import Image from "next/image";
 import Link from "next/link"
-import { FaSearch } from "react-icons/fa";
+
+/* auth */
 import { useAuthDispatch, useAuthState } from "../context/auth"
+
+/* React-icons */
+import { FaSearch } from "react-icons/fa";
+
 
 const NavBar: React.FC = () => {
     const { loading, authenticated } = useAuthState();
@@ -20,26 +27,26 @@ const NavBar: React.FC = () => {
     }
 
     return (
-        <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between px-5 bg-white h-13">
+        <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between h-16 px-5 bg-white shadow">
             <span className="text-2xl font-semibold text-gray-400">
                 <Link href="/">
                     <span>
-                    <Image
-                        src="/reddit-name-logo.png"
-                        alt="logo"
-                        width={80}
-                        height={45}
-                    >
-                    </Image>
+                        <Image
+                            src="/logo.png"
+                            alt="logo"
+                            width={30}
+                            height={30}
+                        >
+                        </Image>
                     </span>
                 </Link>
             </span>
-            <div className="max-w-full px-4">
+            <div className="search-bar max-w-full px-4">
                 <div className="relative flex items-center bg-gray-100 border rounded hover:border-gray-700 hover:bg-white">
                     <FaSearch className="ml-2 text-gray-400" />
                     <input
                         type="text"
-                        placeholder="Search Reddit"
+                        placeholder="Search Community"
                         className="px-3 py-1 bg-transparent rounded h-7 focus:outline-none"
                     />
                 </div>
@@ -49,19 +56,19 @@ const NavBar: React.FC = () => {
                 {!loading && (
                     authenticated ? (
                         <button
-                            className="w-20 px-2 mr-2 text-sm text-center text-white bg-gray-400 rounded h-7"
+                            className="w-20 p-2 mr-2 text-sm text-center text-white border border-orange-500 bg-orange-500 rounded"
                             onClick={handleLogout}
                         >
                             로그아웃
                         </button>
                     ) : (<>
                         <Link href="/login">
-                            <span className="w-20 px-2 pt-1 mr-2 text-sm text-center text-blue-500 border border-blue-500 rounded h-7">
+                            <span className="w-20 px-3 p-2 mr-2 text-sm text-center text-orange-500 border border-orange-500 rounded">
                                 로그인
                             </span>
                         </Link>
                         <Link href="/register">
-                            <span className="w-20 px-2 pt-1 text-sm text-center text-white bg-gray-400 rounded h-7">
+                            <span className="w-20 p-2 text-sm text-center text-white border border-orange-500 bg-orange-500 rounded">
                                 회원가입
                             </span>
                         </Link>

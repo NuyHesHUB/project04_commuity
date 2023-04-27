@@ -1,7 +1,11 @@
+import React, { FormEvent, useState } from 'react'
 import axios from 'axios';
+
+/* next */
 import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
-import React, { FormEvent, useState } from 'react'
+
+/* Types */
 import { Post } from '../../../types';
 
 const PostCreate = () => {
@@ -56,7 +60,7 @@ const PostCreate = () => {
                         />
                         <div className='flex justify-end'>
                             <button
-                                className='px-4 py-1 text-sm font-semibold text-white bg-gray-400 border rounded'
+                                className='px-4 py-1 text-sm font-semibold text-white bg-orange-500 border rounded'
                             >
                                 생성하기
                             </button>

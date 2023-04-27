@@ -55,14 +55,14 @@ const Register = () => {
                             setValue={setPassword}
                             error={errors.password}
                         />
-                        <button className='w-full py-2 mb-1 text-xs font-bold text-white uppercase bg-gray-400 border border-gray-400 rounded'>
+                        <button className='w-full py-2 mb-1 text-sm font-bold text-white uppercase bg-orange-400 border border-orange-400 rounded'>
                             회원 가입
                         </button>
                     </form>
                     <small>
                         이미 가입하셨나요?
                         <Link href="/login">
-                            <span className='ml-1 text-blue-500 uppercase'>로그인</span>
+                            <span className='ml-1 text-orange-500 uppercase'>로그인</span>
                         </Link>
                     </small>
                 </div>

@@ -104,11 +104,13 @@ const Home: NextPage = () => {
                   </span>
                 </Link>
                 <Link href={`/r/${sub.name}`}>
-                  <span className='ml-2 font-bold hover:cursor-pointer'>
-                    /r/{sub.name}
+                  <span className='ml-2 font-semibold hover:cursor-pointer text-sm'>
+                    {sub.name}
                   </span>
                 </Link>
-                <p className='ml-auto font-md'>{sub.postCount}</p>
+                <p className='ml-auto font-md'>
+                    포스트 <span className='text-orange-400 font-semibold'>{sub.postCount}</span> 개
+                </p>
               </div>
             ))}
 
@@ -117,7 +119,7 @@ const Home: NextPage = () => {
           {authenticated &&
             <div className='w-full py-6 text-center'>
               <Link href="/subs/create">
-                <span className='w-full p-2 text-center text-white bg-gray-400 rounded'>
+                <span className='w-full p-2 text-center text-white bg-orange-500 rounded'>
                   커뮤니티 만들기
                 </span>
               </Link>

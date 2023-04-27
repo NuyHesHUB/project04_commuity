@@ -70,7 +70,7 @@ const SubCreate = () => {
                     </div>
                     <div className="flex justify-end">
                         <button
-                            className="px-4 py-1 text-sm font-semibold text-white bg-gray-400 border rounded"
+                            className="px-4 py-1 text-sm font-semibold text-white border border-orange-500 bg-orange-500 rounded"
                         >
                             커뮤니티 만들기
                         </button>

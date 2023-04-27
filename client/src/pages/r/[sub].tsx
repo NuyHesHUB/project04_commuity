@@ -1,13 +1,23 @@
-import axios from 'axios'
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import React, { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react';
-import useSWR from 'swr';
+import axios from 'axios'
+
+/* next */
+import Image from 'next/image';
+/* import Link from 'next/link'; */
+import { useRouter } from 'next/router';
+
+/* Types */
+import { Post } from '../../types';
+
+/* auth */
+import { useAuthState } from '../../context/auth';
+
+/* Component */
 import PostCard from '../../components/PostCard';
 import SideBar from '../../components/SideBar';
-import { useAuthState } from '../../context/auth';
-import { Post } from '../../types';
+
+/* Library */
+import useSWR from 'swr';
 
 const SubPage = () => {
     const [ownSub, setOwnSub] = useState(false);
@@ -51,9 +61,9 @@ const SubPage = () => {
 
     let renderPosts;
     if (!sub) {
-        renderPosts = <p className="text-lg text-center">로딩중...</p>
+        renderPosts = <p className="text-lg mt-10 text-center font-semibold text-gray-700">로딩중...😎</p>
     } else if (sub.posts.length === 0) {
-        renderPosts = <p className="text-lg text-center">아직 작성된 포스트가 없습니다.</p>
+        renderPosts = <p className="text-lg mt-10 text-center font-semibold text-gray-700">아직 작성된 포스트가 없습니다.😩</p>
     } else {
         renderPosts = sub.posts.map((post: Post) => (
             <PostCard key={post.identifier} post={post} subMutate={mutate} />
@@ -87,7 +97,7 @@ const SubPage = () => {
                             )}
                         </div>
                         {/* 커뮤니티 메타 데이터 */}
-                        <div className='h-20 bg-white'>
+                        <div className='h-20 bg-white shadow-sm'>
                             <div className='relative flex max-w-5xl px-5 mx-auto'>
                                 <div className='absolute' style={{ top: -15 }}>
                                     {sub.imageUrl && (
@@ -106,7 +116,7 @@ const SubPage = () => {
                                         <h1 className='text-3xl font-bold '>{sub.title}</h1>
                                     </div>
                                     <p className='font-bold text-gray-400 text-small'>
-                                        /r/{sub.name}
+                                        {sub.name}
                                     </p>
                                 </div>
                             </div>
