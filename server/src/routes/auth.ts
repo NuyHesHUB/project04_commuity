@@ -90,7 +90,7 @@ const login = async (req: Request, res: Response) => {
     // 쿠키저장
     res.set(
       "Set-Cookie",
-      cookie.serialize("token", token, {
+        cookie.serialize("token", token, {
         httpOnly: true,
         maxAge: 60 * 60 * 24 * 7,
         path: "/",
@@ -109,7 +109,7 @@ const logout = async (_: Request, res: Response) => {
     "Set-Cookie",
     cookie.serialize("token", "", {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      /* secure: process.env.NODE_ENV === "production", */
       sameSite: "strict",
       expires: new Date(0),
       path: "/",
