@@ -63,11 +63,12 @@
 
 ### ✔️ Back-end
 
-<img src="https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white"><img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"><img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"><img src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
+<img src="https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white"><img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"><img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"><img src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"><img src="https://img.shields.io/badge/pm2-2B037A?style=for-the-badge&logo=pm2&logoColor=white">
 
 
 ### ✔️ Library
-<img src="https://img.shields.io/badge/react_router_dom-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><img src="https://img.shields.io/badge/styled_components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"><img src="https://img.shields.io/badge/react_pdf-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/react_player-gray?style=for-the-badge&logo=0&logoColor=white">
+<img src="https://img.shields.io/badge/react_router_dom-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
+<img src="https://img.shields.io/badge/typeORM-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/class_names-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/day.js-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/react_icons-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/sharp-black?style=for-the-badge&logo=0&logoColor=white">
 
 <br/>
 
