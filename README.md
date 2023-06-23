@@ -70,12 +70,6 @@
 ### ✔️ Library
 <img src="https://img.shields.io/badge/react_router_dom-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"><img src="https://img.shields.io/badge/typeORM-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/class_names-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/day.js-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/react_icons-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/sharp-black?style=for-the-badge&logo=0&logoColor=white">
 
-<br/>
-
-### ✔️ 기타 기술
-- gh-pages
-- photoshop
-
 <hr/>
 
 
