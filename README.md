@@ -35,6 +35,7 @@
 - 타입 시스템의 개념과 문법을 익히는 것이 처음에는 어려웠습니다. 어떤 타입을 사용해야 하는지, 타입 주석 및 타입 추론 방식을 이해하는 데 시간이 걸렸습니다.
 - Next.js의 프로젝트 구조와 파일 시스템 라우팅 개념을 익히는 데 어려움을 겪었습니다. 어떤 파일을 어떤 위치에 작성해야 하는지, 페이지 및 컴포넌트의 구조를 어떻게 설계해야 하는지 학습하는 데 시간이 걸렸습니다.
 - Express.js의 미들웨어의 개념과 사용법을 이해하는 데 어려움을 겪었습니다. 어떤 미들웨어를 사용해야 하는지, 미들웨어 함수의 작성 방법 및 순서를 어떻게 설정해야 하는지 학습하는데 많은 시간이 필요했습니다.
+- AWS EC2 인스턴스를 설정하는 것이 어려웠습니다. 초기 설정, 보안 그룹, SSH 접속 등을 제대로 이해하고 구성해야 했습니다. 처음 사용하는 것이라 어떤 옵션을 선택해야 하는지 헷갈렸고, 설정들이 서로 연결되어 있어 한 가지를 바꿀 때 다른 설정에도 영향을 줄 수 있다는 것을 알게 되었습니다.
 <br/>
 
 > ## **프로젝트 기간**
@@ -67,8 +68,7 @@
 
 
 ### ✔️ Library
-<img src="https://img.shields.io/badge/react_router_dom-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
-<img src="https://img.shields.io/badge/typeORM-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/class_names-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/day.js-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/react_icons-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/sharp-black?style=for-the-badge&logo=0&logoColor=white">
+<img src="https://img.shields.io/badge/react_router_dom-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"><img src="https://img.shields.io/badge/typeORM-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/class_names-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/day.js-black?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/react_icons-gray?style=for-the-badge&logo=0&logoColor=white"><img src="https://img.shields.io/badge/sharp-black?style=for-the-badge&logo=0&logoColor=white">
 
 <br/>
 
